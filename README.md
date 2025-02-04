@@ -143,6 +143,6 @@ This repository is intended to be used as a template. When starting a new projec
      git push -u origin main
      ```
 
-### Final notes
+# Final notes
 A folder called extensions has been created to store the XtendM3 files, for reference and guidance, you can check out the examples provided in the `examples` branch of this repository. These examples demonstrate various use cases and scenarios for working with Infor XtendM3 extensions. Feel free to explore and use them as a basis for your own implementations.
 You are now ready to start working with Infor XtendM3 extensions in your development environment. Happy coding!
