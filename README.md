@@ -43,11 +43,17 @@ XtendM3 is a customization tool and service provided by Infor for modifying and 
 ### Setting Up the Project
 
 1. **Clone the Repository**:
-   - Open a terminal and run:
-     ```sh
-     git clone <repository-url>
-     cd <repository-directory>
-     ```
+   - **Using Git**:
+     - Open a terminal and run:
+       ```sh
+       git clone <repository-url>
+       cd <repository-directory>
+       ```
+   - **Using Azure DevOps**:
+     - Open Visual Studio Code.
+     - Click on the Source Control icon in the Activity Bar.
+     - Click on "Clone Repository" and select "Azure DevOps".
+     - Follow the prompts to authenticate and select your repository.
 
 2. **Open the Project in VS Code**:
    - Open Visual Studio Code.
@@ -59,6 +65,27 @@ XtendM3 is a customization tool and service provided by Infor for modifying and 
      mvn clean install
      ```
 
+### Changing the Repository for a New Project
+
+This repository is intended to be used as a template. When starting a new project, you should change the repository to your new project's repository. Follow these steps:
+
+1. **Remove the Existing Remote**:
+   - Open a terminal in your project directory and run:
+     ```sh
+     git remote remove origin
+     ```
+
+2. **Add the New Remote**:
+   - Add your new repository as the remote by running:
+     ```sh
+     git remote add origin <new-repository-url>
+     ```
+
+3. **Push to the New Repository**:
+   - Push your local changes to the new repository:
+     ```sh
+     git push -u origin main
+     ```
 ### Examples
 
 For reference and guidance, you can check out the examples provided in the `examples` branch of this repository. These examples demonstrate various use cases and scenarios for working with Infor XtendM3 extensions. Feel free to explore and use them as a basis for your own implementations.
