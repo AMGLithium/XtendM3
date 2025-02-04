@@ -24,47 +24,102 @@ For more information, please refer to the Infor XtendM3 [documentation.](https:/
    - Open a Command Prompt and run `java -version` to check Java installation.
    - Run `mvn -version` to check Maven installation.
 
-### Install Visual Studio Code
+5. **Configuring Git**:
 
-1. **Download and Install VS Code**:
-   - Download Visual Studio Code from the official website.
-   - Run the installer and follow the instructions.
+   - **Install Git**:
+      - Download Git from the official website.
+      - Run the installer and follow the instructions.
+      - During installation, select the option to "Git from the command line and also from 3rd-party software" to add Git to the PATH.
 
-2. **Install Java Extension Pack**:
-   - Open Visual Studio Code.
-   - Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
-   - Search for "Java Extension Pack" and install it.
+   - **Set Up Git**:
+      - Open Git Bash or a terminal and configure your user name and email:
+      ```sh
+      git config --global user.name "Your Name"
+      git config --global user.email "your.email@example.com"
+      ```
 
-3. **Install Groovy Extension**:
-   - In the Extensions view, search for "Groovy" and install the Groovy extension.
+   - **Verify Configuration**:
+      - Check your configuration settings:
+      ```sh
+      git config --list
+      ```
 
-4. **Install XML Extension (Optional)**:
-   - In the Extensions view, search for "XML" and install the XML extension.   
+   -  **Authenticating with Azure DevOps**
 
-### Setting Up the Project
+      - Follow [this microsoft guide](https://learn.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops) to learn how to configure the access to the repository
 
-1. **Clone the Repository**:
-   - **Using Git**:
-     - Open a terminal and run:
-       ```sh
-       git clone <repository-url>
-       cd <repository-directory>
-       ```
-   - **Using Azure DevOps**:
-     - Open Visual Studio Code.
-     - Click on the Source Control icon in the Activity Bar.
-     - Click on "Clone Repository" and select "Azure DevOps".
-     - Follow the prompts to authenticate and select your repository.
 
-2. **Open the Project in VS Code**:
-   - Open Visual Studio Code.
-   - Go to `File > Open Folder` and select your project directory.
 
-3. **Build the Project**:
-   - Open a terminal in VS Code and run:
-     ```sh
-     mvn clean install
-     ```
+# Setting Up the Project
+
+ ### Visual Studio Code ##
+   1. **Download and Install VS Code**:
+      - Download Visual Studio Code from the official website.
+      - Run the installer and follow the instructions.
+
+   2. **Install Java Extension Pack**:
+      - Open Visual Studio Code.
+      - Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
+      - Search for "Java Extension Pack" and install it.
+
+   3. **Install Groovy Extension**:
+      - In the Extensions view, search for "code-groovy" and install the Groovy extension.
+
+   4. **Install XML Extension (Optional)**:
+      - In the Extensions view, search for "XML" and install the XML extension.   
+
+   5. **Clone the Repository**:
+      - **Using Git**:
+         - Open a terminal and run:
+            ```sh
+            git clone <repository-url>
+            cd <repository-directory>
+            ```
+      - **Using Azure DevOps**:
+         - Open Visual Studio Code.
+         - Click on the Source Control icon in the Activity Bar.
+         - Click on "Clone Repository" and select "Azure DevOps".
+         - Follow the prompts to authenticate and select your repository.
+
+      - **Open the Project in VS Code**:
+         - Open Visual Studio Code.
+         - Go to `File > Open Folder` and select your project directory.
+         - Build the Project**:
+            - Open a terminal in VS Code and run:
+               ```sh
+               mvn clean install
+               ```
+ ### Eclipse ##
+   1. **Download and Install Eclipse**:
+      - Download Eclipse IDE for Java Developers from the official website.
+      - Run the installer and follow the instructions.
+
+   2. **Install Maven Integration for Eclipse (m2e)**:
+      - Open Eclipse.
+      - Go to `Help > Eclipse Marketplace`.
+      - Search for "Maven Integration for Eclipse" and install it.
+
+   3. **Clone the Repository**:
+      - **Using Git**:
+         - Open a terminal and run:
+            ```sh
+            git clone <repository-url>
+            cd <repository-directory>
+            ```
+
+   4. **Import the Project**:
+      - Open Eclipse.
+      - Go to `File > Import`.
+      - Select `Maven > Existing Maven Projects` and click `Next`.
+      - Browse to your project directory and click `Finish`.
+
+   4. **Build the Project**:
+      - Right-click on the project in the Project Explorer.
+      - Select `Run As > Maven install`.
+
+### Note on Dependency Connections
+
+While Visual Studio Code is a powerful editor, it looks like there are issues with dependency connections when exploring and opening them. Eclipse, on the other hand, tends to handle these connections more reliably, making it a better choice for managing dependencies in this project.
 
 ### Changing the Repository for a New Project
 
@@ -87,8 +142,7 @@ This repository is intended to be used as a template. When starting a new projec
      ```sh
      git push -u origin main
      ```
-### Examples
 
-For reference and guidance, you can check out the examples provided in the `examples` branch of this repository. These examples demonstrate various use cases and scenarios for working with Infor XtendM3 extensions. Feel free to explore and use them as a basis for your own implementations.
-
+### Final notes
+A folder called extensions has been created to store the XtendM3 files, for reference and guidance, you can check out the examples provided in the `examples` branch of this repository. These examples demonstrate various use cases and scenarios for working with Infor XtendM3 extensions. Feel free to explore and use them as a basis for your own implementations.
 You are now ready to start working with Infor XtendM3 extensions in your development environment. Happy coding!
