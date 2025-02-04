@@ -1,5 +1,6 @@
 # Introduction 
 XtendM3 is a customization tool and service provided by Infor for modifying and extending M3 Business Engine logic in the Cloud.
+For more information, please refer to the Infor XtendM3 [documentation.](https://infor-cloud.github.io/xtendm3/)
 
 # Getting Started
 
