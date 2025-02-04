@@ -2,6 +2,7 @@
 XtendM3 is a customization tool and service provided by Infor for modifying and extending M3 Business Engine logic in the Cloud.
 
 # Getting Started
+
 1. **Install Java 17**:
    - Download the Java 17 JDK from the Oracle website.
    - Run the installer and follow the instructions.
@@ -36,6 +37,9 @@ XtendM3 is a customization tool and service provided by Infor for modifying and 
 3. **Install Groovy Extension**:
    - In the Extensions view, search for "Groovy" and install the Groovy extension.
 
+4. **Install XML Extension (Optional)**:
+   - In the Extensions view, search for "XML" and install the XML extension.   
+
 ### Setting Up the Project
 
 1. **Clone the Repository**:
@@ -54,14 +58,6 @@ XtendM3 is a customization tool and service provided by Infor for modifying and 
      ```sh
      mvn clean install
      ```
-
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
 
 ### Examples
 
