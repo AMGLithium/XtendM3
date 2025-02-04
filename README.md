@@ -51,7 +51,7 @@ For more information, please refer to the Infor XtendM3 [documentation.](https:/
 
 
 # Setting Up the Project
-
+above you will find a step by step guide to configure the project on your prefered IDE.
  ### Visual Studio Code ##
    1. **Download and Install VS Code**:
       - Download Visual Studio Code from the official website.
