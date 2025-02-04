@@ -5,7 +5,7 @@ public class TriggerTest extends ExtendM3Trigger {
   private final MICallerAPI miCaller
   private final String[] runOnlyForUsers = [] // Leave the array empty if it should be run for everyone, otherwise add authorized usernames
 
-  FindDuplicateCustomers(ProgramAPI program, InteractiveAPI interactive, LoggerAPI logger, MICallerAPI miCaller) {
+  TriggerTest(ProgramAPI program, InteractiveAPI interactive, LoggerAPI logger, MICallerAPI miCaller) {
     this.program = program
     this.interactive = interactive
     this.logger = logger

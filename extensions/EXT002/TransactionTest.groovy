@@ -1,10 +1,10 @@
-public class batchTest extends ExtendM3Transaction {
+public class TransactionTest extends ExtendM3Transaction {
   private final MIAPI mi;
   private final MICallerAPI miCaller;
   private final DatabaseAPI database;
   private final LoggerAPI logger;
   
-  public batchTest(MIAPI mi, MICallerAPI miCaller, DatabaseAPI database, LoggerAPI logger) {
+  public TransactionTest(MIAPI mi, MICallerAPI miCaller, DatabaseAPI database, LoggerAPI logger) {
     this.mi = mi;
     this.miCaller = miCaller;
     this.database = database;
