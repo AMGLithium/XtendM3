@@ -58,7 +58,7 @@ above you will find a step by step guide to configure the project on your prefer
       - Run the installer and follow the instructions.
 
    2. **Install Java Extension Pack for VS Code**:
-      - Follow (this guide)[https://code.visualstudio.com/docs/languages/java]
+      - Follow [this guide](https://code.visualstudio.com/docs/languages/java)
 
    3. **Install Groovy Extension**:
       - In the Extensions view, search for "code-groovy" and install the Groovy extension.
